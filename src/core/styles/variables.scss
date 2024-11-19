@@ -1,0 +1,111 @@
+// Color Variables
+$color-darkblue: rgba(35, 37, 54, 1);
+$color-yellow: rgba(255, 208, 80, 1);
+$color-yellow-hover: rgba(237, 193, 74, 1);
+$color-purple: rgba(89, 46, 169, 1);
+$color-darkgrey: rgba(76, 76, 76, 1);
+$color-lightgrey: rgba(109, 110, 118, 1);
+$color-white-grey: rgba(244, 244, 244, 1);
+$color-white-pink: rgba(244, 240, 248, 1);
+$color-white-yellow: rgba(251, 246, 234, 1);
+$color-white: rgba(255, 255, 255, 1);
+$color-black: rgba(0, 0, 0, 1);
+
+// Spacing Variables
+$xs6: 1;
+$xs5: 2;
+$xs4: 4;
+$xs3: 8;
+$xs2: 14;
+$xs: 16;
+$sm: 20;  
+$md: 24;
+$lg: 28;  
+$xl: 32;
+$xl2: 36;  
+$xl3: 40;
+$xl4: 48;
+$xl5: 56;
+$xl6: 64;
+$xl7: 72;
+$xl8: 80;
+$xl9: 88;
+$xl10: 96;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+
+// Font Variables
+$font-family-sen: 'Sen', sans-serif;
+
+$font-display: (
+  family: $font-family-sen,
+  weight: $font-weight-bold,
+  size: #{$xl2}px,
+  line-height: #{$xl3}px
+);
+
+$font-heading-h1: (
+  family: $font-family-sen,
+  weight: $font-weight-bold,
+  size: #{$xl4}px,
+  line-height: #{$xl6}px
+);
+
+$font-heading-h2: (
+  family: $font-family-sen,
+  weight: $font-weight-bold,
+  size: #{$xl2}px,
+  line-height: #{$xl4}px
+);
+
+$font-heading-h3: (
+  family: $font-family-sen,
+  weight: $font-weight-bold,
+  size: #{$lg}px,
+  line-height: #{$xl2}px
+);
+
+$font-heading-h4: (
+  family: $font-family-sen,
+  weight: $font-weight-bold,
+  size: #{$md}px,
+  line-height: #{$xl}px
+);
+
+$font-heading-h5: (
+  family: $font-family-sen,
+  weight: $font-weight-bold,
+  size: #{$sm}px,
+  line-height: #{$xl}px
+);
+
+$font-heading-h6: (
+  family: $font-family-sen,
+  weight: $font-weight-bold,
+  size: #{$xs}px,
+  line-height: #{$md}px
+);
+
+$font-body-01: (
+  family: $font-family-sen,
+  weight: $font-weight-regular,
+  size: #{$xs}px,
+  line-height: #{$lg}px
+);
+
+$font-body-02: (
+  family: $font-family-sen,
+  weight: $font-weight-regular,
+  size: #{$xs2}px,
+  line-height: #{$sm}px
+);
+
+$font-label: (
+  family: $font-family-sen,
+  weight: $font-weight-medium,
+  size: #{$xs2}px,
+  line-height: #{$sm}px
+);

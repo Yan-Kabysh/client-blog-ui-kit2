@@ -1,0 +1,10 @@
+import { Meta } from '@storybook/react';
+import { HeadingProps } from './interfaces';
+declare const _default: Meta;
+export default _default;
+export declare const H1: import("@storybook/csf").AnnotatedStoryFn<import("@storybook/react").ReactRenderer, HeadingProps>;
+export declare const H2: import("@storybook/csf").AnnotatedStoryFn<import("@storybook/react").ReactRenderer, HeadingProps>;
+export declare const H3: import("@storybook/csf").AnnotatedStoryFn<import("@storybook/react").ReactRenderer, HeadingProps>;
+export declare const H4: import("@storybook/csf").AnnotatedStoryFn<import("@storybook/react").ReactRenderer, HeadingProps>;
+export declare const H5: import("@storybook/csf").AnnotatedStoryFn<import("@storybook/react").ReactRenderer, HeadingProps>;
+export declare const H6: import("@storybook/csf").AnnotatedStoryFn<import("@storybook/react").ReactRenderer, HeadingProps>;

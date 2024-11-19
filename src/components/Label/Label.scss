@@ -1,0 +1,8 @@
+@import '../../core/styles/variables.scss';
+
+.label{
+    font-family: map-get($font-label, family); 
+    font-weight: map-get($font-label, weight); 
+    font-size: map-get($font-label, size); 
+    line-height: map-get($font-label, line-height);
+}

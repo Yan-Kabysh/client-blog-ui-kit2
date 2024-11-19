@@ -1,0 +1,13 @@
+@import '../../core/styles/variables.scss';
+
+.input{
+    border: #{$xs6}px solid rgba($color-lightgrey, 0.5);
+    padding: #{$md}px;
+    font-family: map-get($font-body-01, family); 
+    font-weight: map-get($font-body-01, weight); 
+    font-size: map-get($font-body-01, size); 
+    line-height: map-get($font-body-01, line-height);
+    color: $color-darkblue;
+    width: 100%;
+    box-sizing: border-box;
+}

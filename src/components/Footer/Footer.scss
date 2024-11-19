@@ -1,0 +1,47 @@
+@import '../../core/styles/variables.scss';
+
+
+.footer-wrapper{
+    padding: #{$xl5}px #{$xl8}px;
+    background-color: $color-darkblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: #{$xl5}px #{$xl8}px;
+    background-color: rgba($color-white, 0.05); 
+}
+
+.footer-main-text {
+    color: $color-white;
+    width: #{$xl5} + '%'; 
+}
+
+.contact{
+    color: rgba($color-white, 0.7); 
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: #{$xl}px;
+}
+
+.icons{
+    width: #{$xs2} + '%';
+    display: flex;
+    justify-content: space-between;
+}

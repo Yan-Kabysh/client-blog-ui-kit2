@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "outDir": "./dist",
+      "jsx": "react-jsx",
+      "moduleResolution": "node",
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "target": "es5",
+      "module": "esnext",
+      "strict": true
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "dist", "**/*.stories.tsx", "**/*.scss"]
+  }
+  
