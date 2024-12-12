@@ -1,3 +1,3 @@
 export interface LabelProps {
-    children: string
+  children: string;
 }

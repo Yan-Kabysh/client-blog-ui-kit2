@@ -1,0 +1,49 @@
+@import '../../core/styles/variables.scss';
+
+.primaryCategory {
+  padding: #{$xl}px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: #{$xs6}px solid rgba($color-lightgrey, $opacity-xs);
+  transition:
+    background-color #{$time-sm} ease,
+    border-color #{$time-sm} ease;
+
+  &:hover {
+    background-color: $color-yellow-hover;
+    border-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.secondaryCategory {
+  padding: 0 #{$md}px;
+  display: flex;
+  gap: #{$xs}px;
+  align-items: center;
+  border: #{$xs6}px solid rgba($color-lightgrey, $opacity-xs);
+  transition:
+    background-color #{$time-sm} ease,
+    border-color #{$time-sm} ease;
+
+  &:hover {
+    background-color: $color-yellow-hover;
+    border-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.categoryIcon {
+  width: #{$xl4}px;
+  height: #{$xl4}px;
+  background-color: $color-white-yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: #{$xs}px;
+}
+
+.categoryText {
+  color: $color-lightgrey;
+}

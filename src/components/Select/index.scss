@@ -1,0 +1,85 @@
+@import '../../core/styles/variables.scss';
+
+.custom-selector {
+  position: relative;
+  width: 100%;
+  border: #{$xs6}px solid rgba($color-lightgrey, $opacity-md);
+  font-family: map-get($font-body-01, family);
+  color: $color-darkblue;
+
+  .custom-selector-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: #{$md}px;
+    cursor: pointer;
+    transition: border-color #{$time-xs};
+
+    &:hover {
+      border-color: $color-darkblue;
+    }
+
+    &.open {
+      border-color: $color-darkblue;
+    }
+
+    .arrow {
+      width: 12px;
+      height: 12px;
+      border: solid $color-darkblue;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      transition: transform 0.3s;
+
+      &.rotate {
+        transform: rotate(-135deg);
+      }
+    }
+  }
+
+  .custom-selector-options {
+    position: absolute;
+    list-style-type: none;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 0;
+    background-color: $color-white;
+    border: #{$xs6}px solid rgba($color-lightgrey, 0.5);
+    border-top: none;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease;
+
+    .custom-selector-option {
+      padding: #{$md}px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: rgba($color-lightgrey, 0.2);
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error {
+  display: block;
+  font-family: map-get($font-body-01, family);
+  font-size: map-get($font-body-01, size);
+  color: $color-error;
+  margin-top: #{$xs4}px;
+  min-height: map-get($font-body-01, line-height);
+  line-height: map-get($font-body-01, line-height);
+}

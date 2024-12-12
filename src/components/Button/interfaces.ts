@@ -1,8 +1,10 @@
-import { HTMLAttributes } from "react";
+import { HTMLAttributes } from 'react';
 
 export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-    onClick: () => void;
-    label: string;
-    variant?: 'primary' | 'secondary';
-    size?: 'small' | 'medium' | 'large';
-  }
+  onClick: () => void;
+  label: string;
+  variant?: 'primary' | 'secondary';
+  size?: 'small' | 'medium' | 'large';
+  title: string;
+  disabled?: boolean;
+}

@@ -1,0 +1,212 @@
+@import '../../core/styles/variables.scss';
+
+.footer-wrapper {
+  padding: #{$xl5}px #{$xl8}px;
+  background-color: $color-darkblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: #{$xl5}px #{$xl8}px;
+  background-color: rgba($color-white, 0.05);
+}
+
+.footer-main-text {
+  color: $color-white;
+  width: #{$xl5} + '%';
+}
+
+.contact {
+  color: rgba($color-white, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: #{$xl}px;
+}
+
+.icons {
+  width: #{$xs2} + '%';
+  display: flex;
+  justify-content: space-between;
+  svg {
+    fill: $color-lightgrey;
+  }
+}
+
+.email-block {
+  display: flex;
+  justify-content: center;
+  gap: #{$md}px;
+  button {
+    height: 60%;
+  }
+}
+
+.email-block-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-input {
+  background-color: transparent;
+  color: $color-lightgrey;
+  border: #{$xs6}px solid $color-darkgrey;
+  padding: #{$xs2}px #{$md}px;
+  font-family: map-get($font-body-01, family);
+  font-weight: map-get($font-body-01, weight);
+  font-size: map-get($font-body-01, size);
+  line-height: map-get($font-body-01, line-height);
+  outline: none;
+}
+
+.title {
+  color: $color-white;
+}
+
+.links {
+  display: flex;
+  gap: #{$sm}px;
+  align-items: center;
+
+  .link-item {
+    font-family: map-get($font-body-01, family);
+    font-weight: map-get($font-body-01, weight);
+    font-size: map-get($font-body-01, size);
+    line-height: map-get($font-body-01, line-height);
+    text-decoration: none;
+    color: $color-white;
+    transition: color #{$time-sm} ease;
+
+    &:hover {
+      color: $color-white-grey;
+    }
+  }
+}
+
+.icons {
+  svg {
+    height: #{$xs}px;
+  }
+}
+
+@include respond-to(lg) {
+  .footer-main {
+    flex-direction: column;
+    box-sizing: border-box;
+    .footer-main-text {
+      width: 100%;
+    }
+  }
+}
+
+@include respond-to(md) {
+  .footer-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: #{$md}px;
+    .icons {
+      width: #{$lg} + '%';
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .footer-wrapper {
+    padding: #{$xs}px #{$lg}px;
+  }
+
+  .footer-header,
+  .footer-main,
+  .footer-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: #{$md}px;
+  }
+
+  .footer-header {
+    .title {
+      margin-bottom: #{$md}px;
+    }
+  }
+
+  .footer-main {
+    align-items: stretch;
+
+    .footer-main-text,
+    .contact {
+      width: 100%;
+    }
+  }
+  .links {
+    flex-wrap: wrap;
+  }
+  .footer-footer {
+    align-items: stretch;
+
+    .icons {
+      justify-content: flex-start;
+      gap: #{$sm}px;
+    }
+  }
+  .email-block {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: #{$sm}px;
+
+    .footer-input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .email-block-main {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .footer-main {
+    padding: #{$xs}px #{$lg}px;
+    h2 {
+      font-size: map-get($font-heading-h4, size);
+      line-height: map-get($font-heading-h4, line-height);
+    }
+  }
+  .footer-footer {
+    .icons {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+
+.error {
+  display: block;
+  font-family: map-get($font-body-01, family);
+  font-size: map-get($font-body-01, size);
+  color: $color-error;
+  margin-top: #{$xs4}px;
+  min-height: map-get($font-body-01, line-height);
+  line-height: map-get($font-body-01, line-height);
+}

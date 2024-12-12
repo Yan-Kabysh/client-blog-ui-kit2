@@ -1,5 +1,5 @@
 import { StoryFn, Meta } from '@storybook/react';
-import Body from './Body'
+import Body from '.';
 import { BodyProps } from './interfaces';
 
 export default {
@@ -11,11 +11,11 @@ const Template: StoryFn<BodyProps> = (args) => <Body {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  children: 'Body text primary'
+  children: 'Body text primary',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-    type: 2,
-  children: 'Body text secodary'
+  type: 2,
+  children: 'Body text secodary',
 };

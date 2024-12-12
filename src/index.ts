@@ -1,9 +1,14 @@
-export { default as Button } from './components/Button/Button';
-export { default as Body} from './components/Body'
-export {default as Display} from './components/Display'
-export {default as Footer} from './components/Footer'
-export {default as Header} from './components/Header'
-export {default as Heading} from './components/Heading'
-export {default as Icon} from './components/Icon'
-// export {default as Input} from './components/Input'
-export {default as Label} from './components/Label'
+export { default as Button } from './components/Button';
+export { default as Body } from './components/Body';
+export { default as Display } from './components/Display';
+export { default as Footer } from './components/Footer';
+export { default as Header } from './components/Header';
+export { default as Heading } from './components/Heading';
+export { default as Icon } from './components/Icon';
+export { default as Input } from './components/Input';
+export { default as Label } from './components/Label';
+export { default as Cap } from './components/Cap';
+export { default as Category } from './components/Category';
+export { default as Tag } from './components/Tag';
+export { default as MessageBox } from './components/MessageBox';
+export { default as Select } from './components/Select';

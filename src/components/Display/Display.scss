@@ -1,8 +1,0 @@
-@import '../../core/styles/variables.scss';
-
-.display{
-    font-family: map-get($font-display, family); 
-    font-weight: map-get($font-display, weight); 
-    font-size: map-get($font-display, size); 
-    line-height: map-get($font-display, line-height);
-}

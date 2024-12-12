@@ -1,7 +1,7 @@
-"use client";
+'use client';
 import { StoryFn, Meta } from '@storybook/react';
 import { links } from './config';
-import Footer from './Footer'
+import Footer from '.';
 import { FooterProps } from './interfaces';
 export default {
   title: 'UI Kit/Footer',
@@ -12,11 +12,14 @@ const Template: StoryFn<FooterProps> = (args) => <Footer {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-    title: 'Modsen Client Blog',
-    links: links,
-    btnLabel: 'Subscribe',
-    mainText: 'Subscribe to our news letter to get latest updates and news',
-    btnClick: () => alert('Click'),
-    address: 'Finstreet 118 2561 Fintown',
-    email: 'Hello@finsweet.com 020 7993 2905'
+  title: 'Modsen Client Blog',
+  links: links,
+  btnLabel: 'Subscribe',
+  mainText: 'Subscribe to our news letter to get latest updates and news',
+  btnClick: () => alert('Click'),
+  address: 'Finstreet 118 2561 Fintown',
+  email: 'Hello@finsweet.com 020 7993 2905',
+  placeholder: 'Enter Your Email',
+  value: '',
+  onChange: () => {},
 };

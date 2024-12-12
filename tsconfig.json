@@ -2,14 +2,18 @@
   "compilerOptions": {
     "target": "es5",
     "module": "esnext",
-    "declaration": true,
     "outDir": "./dist",
     "strict": true,
     "jsx": "react-jsx",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist"]

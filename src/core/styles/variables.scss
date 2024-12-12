@@ -1,4 +1,3 @@
-// Color Variables
 $color-darkblue: rgba(35, 37, 54, 1);
 $color-yellow: rgba(255, 208, 80, 1);
 $color-yellow-hover: rgba(237, 193, 74, 1);
@@ -10,19 +9,49 @@ $color-white-pink: rgba(244, 240, 248, 1);
 $color-white-yellow: rgba(251, 246, 234, 1);
 $color-white: rgba(255, 255, 255, 1);
 $color-black: rgba(0, 0, 0, 1);
+$color-error: rgba(232, 18, 18, 1);
 
-// Spacing Variables
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1440px;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: $breakpoint-xs) {
+      @content;
+    }
+  } @else if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (max-width: $breakpoint-xl) {
+      @content;
+    }
+  }
+}
+
 $xs6: 1;
 $xs5: 2;
 $xs4: 4;
 $xs3: 8;
 $xs2: 14;
 $xs: 16;
-$sm: 20;  
+$sm: 20;
 $md: 24;
-$lg: 28;  
+$lg: 28;
 $xl: 32;
-$xl2: 36;  
+$xl2: 36;
 $xl3: 40;
 $xl4: 48;
 $xl5: 56;
@@ -36,76 +65,111 @@ $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 
-
-// Font Variables
 $font-family-sen: 'Sen', sans-serif;
+$font-family-inter: 'Inter', sans-serif;
 
 $font-display: (
   family: $font-family-sen,
   weight: $font-weight-bold,
-  size: #{$xl2}px,
-  line-height: #{$xl3}px
+  size: #{$xl5}px,
+  line-height: #{$xl6}px,
 );
 
 $font-heading-h1: (
   family: $font-family-sen,
   weight: $font-weight-bold,
   size: #{$xl4}px,
-  line-height: #{$xl6}px
+  line-height: #{$xl6}px,
 );
 
 $font-heading-h2: (
   family: $font-family-sen,
   weight: $font-weight-bold,
   size: #{$xl2}px,
-  line-height: #{$xl4}px
+  line-height: #{$xl4}px,
 );
 
 $font-heading-h3: (
   family: $font-family-sen,
   weight: $font-weight-bold,
   size: #{$lg}px,
-  line-height: #{$xl2}px
+  line-height: #{$xl2}px,
 );
 
 $font-heading-h4: (
   family: $font-family-sen,
   weight: $font-weight-bold,
   size: #{$md}px,
-  line-height: #{$xl}px
+  line-height: #{$xl}px,
 );
 
 $font-heading-h5: (
   family: $font-family-sen,
   weight: $font-weight-bold,
   size: #{$sm}px,
-  line-height: #{$xl}px
+  line-height: #{$xl}px,
 );
 
 $font-heading-h6: (
   family: $font-family-sen,
   weight: $font-weight-bold,
   size: #{$xs}px,
-  line-height: #{$md}px
+  line-height: #{$md}px,
 );
 
 $font-body-01: (
   family: $font-family-sen,
   weight: $font-weight-regular,
   size: #{$xs}px,
-  line-height: #{$lg}px
+  line-height: #{$lg}px,
 );
 
 $font-body-02: (
   family: $font-family-sen,
   weight: $font-weight-regular,
   size: #{$xs2}px,
-  line-height: #{$sm}px
+  line-height: #{$sm}px,
 );
 
 $font-label: (
   family: $font-family-sen,
   weight: $font-weight-medium,
   size: #{$xs2}px,
-  line-height: #{$sm}px
+  line-height: #{$sm}px,
 );
+
+$font-cap-01: (
+  family: $font-family-inter,
+  weight: $font-weight-medium,
+  size: #{$xs}px,
+  line-height: #{$sm}px,
+);
+
+$font-cap-02: (
+  family: $font-family-inter,
+  weight: $font-weight-medium,
+  size: #{$xs}px,
+  line-height: #{$sm}px,
+);
+
+$opacity-xs3: 0.1;
+$opacity-xs2: 0.2;
+$opacity-xs: 0.3;
+$opacity-sm: 0.4;
+$opacity-md: 0.5;
+$opacity-lg: 0.6;
+$opacity-xl: 0.7;
+$opacity-xl2: 0.8;
+$opacity-xl3: 0.9;
+$opacity-xl4: 1;
+
+$scale-sm: 0.9;
+$scale-md: 1;
+$scale-lg: 1.1;
+
+$time-xs: '0.2s';
+$time-sm: '0.3s';
+$time-md: '0.4s';
+$time-lg: '0.5s';
+$time-xl: '0.8s';
+$time-xl2: '1.5s';

@@ -1,0 +1,19 @@
+@import '../../core/styles/variables.scss';
+
+.cap1 {
+  font-family: map-get($font-cap-01, family);
+  font-weight: map-get($font-cap-01, weight);
+  font-size: map-get($font-cap-01, size);
+  line-height: map-get($font-cap-01, line-height);
+  color: $color-purple;
+  letter-spacing: 3px;
+}
+
+.cap2 {
+  font-family: map-get($font-cap-02, family);
+  font-weight: map-get($font-cap-02, weight);
+  font-size: map-get($font-cap-02, size);
+  line-height: map-get($font-cap-02, line-height);
+  color: $color-purple;
+  letter-spacing: 3px;
+}

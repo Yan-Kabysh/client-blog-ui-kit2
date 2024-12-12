@@ -1,0 +1,35 @@
+@import '../../core/styles/variables.scss';
+
+.tag {
+  font-family: $font-family-sen;
+  font-size: map-get($font-label, size);
+  line-height: map-get($font-heading-h4, line-height);
+  font-weight: map-get($font-display, weight);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: #{$xs3}px #{$xl}px;
+  border: #{$xs5}px solid $color-lightgrey;
+  border-radius: #{$xl}px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  transition:
+    background-color #{$time-sm} ease,
+    color #{$time-sm} ease,
+    border-color #{$time-sm} ease;
+
+  input {
+    display: none;
+  }
+
+  &:hover {
+    border-color: $color-yellow;
+  }
+
+  &.checked {
+    background-color: $color-yellow;
+    border-color: $color-yellow;
+    color: $color-black;
+  }
+}

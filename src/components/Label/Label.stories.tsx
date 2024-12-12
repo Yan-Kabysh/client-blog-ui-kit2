@@ -1,5 +1,5 @@
 import { StoryFn, Meta } from '@storybook/react';
-import Label from './Label'
+import Label from '.';
 import { LabelProps } from './interfaces';
 
 export default {
@@ -11,5 +11,5 @@ const Template: StoryFn<LabelProps> = (args) => <Label {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  children: 'Label text'
+  children: 'Label text',
 };

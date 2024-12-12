@@ -1,5 +1,5 @@
 import { StoryFn, Meta } from '@storybook/react';
-import Display from './Display'
+import Display from '.';
 import { DisplayProps } from './interfaces';
 
 export default {
@@ -11,5 +11,6 @@ const Template: StoryFn<DisplayProps> = (args) => <Display {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  children: 'Display text'
+  children: 'Display text',
+  className: '',
 };

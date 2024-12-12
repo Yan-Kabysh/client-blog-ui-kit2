@@ -1,2 +1,2 @@
 import './core/styles/index.scss';
-export {default as Button} from './src/components/Button/Button'
+export { default as Button } from './src/components/Button/Button';

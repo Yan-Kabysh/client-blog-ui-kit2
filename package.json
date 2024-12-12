@@ -1,7 +1,7 @@
 {
   "name": "client-blog-ui-kit2",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.20",
+  "description": "UI library for client blogs",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,17 +9,20 @@
     "build:js": "rollup -c",
     "build": "yarn run build:types && yarn run build:js",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "author": "Yan Kabysh",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.26.0",
     "@babel/plugin-transform-runtime": "^7.25.9",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.25.9",
     "@babel/preset-typescript": "^7.26.0",
     "@chromatic-com/storybook": "3",
     "@rollup/plugin-alias": "^5.1.1",
+    "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-terser": "^0.4.4",
@@ -40,12 +43,24 @@
     "@svgr/webpack": "^8.1.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/parser": "^8.18.0",
     "babel-loader": "^9.2.1",
+    "babel-plugin-inline-react-svg": "^2.0.2",
+    "babel-plugin-module-resolver": "^5.0.2",
     "copyfiles": "^2.4.1",
     "css-loader": "^7.1.2",
+    "eslint": "^8",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2",
+    "eslint-plugin-jsx-a11y": "^6",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7",
+    "eslint-plugin-react-hooks": "^4",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "file-loader": "^6.2.0",
     "postcss": "^8.4.47",
     "postcss-loader": "^8.1.1",
+    "prettier": "^3.4.2",
     "prop-types": "^15.8.1",
     "rollup": "^4.25.0",
     "rollup-plugin-dts": "^6.1.1",
@@ -62,10 +77,12 @@
     "url-loader": "^4.1.1"
   },
   "peerDependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "19.0.0-rc-02c0e824-20241028",
+    "react-dom": "19.0.0-rc-02c0e824-20241028"
   },
   "dependencies": {
+    "react": "19.0.0-rc-02c0e824-20241028",
+    "react-dom": "19.0.0-rc-02c0e824-20241028",
     "zod": "^3.23.8"
   }
 }

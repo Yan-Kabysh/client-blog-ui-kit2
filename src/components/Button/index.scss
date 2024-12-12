@@ -1,0 +1,72 @@
+@import '../../core/styles/variables.scss';
+
+.button {
+  padding: #{$xs}px #{$xl4}px;
+  font-family: $font-family-sen;
+  border: none;
+  cursor: pointer;
+  transition: background-color #{$time-sm} ease;
+
+  &.primary {
+    background-color: $color-yellow;
+    color: $color-black;
+
+    &:hover {
+      background-color: $color-yellow-hover;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+
+      pointer-events: none;
+    }
+  }
+
+  &.secondary {
+    background-color: $color-white;
+    color: $color-darkblue;
+
+    &:hover {
+      background-color: $color-white-pink;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  }
+
+  &.small {
+    font-size: 0.8rem;
+    padding: $xs2 $xs3;
+  }
+
+  &.medium {
+    font-weight: #{$font-weight-bold};
+    font-size: #{$sm}px;
+    line-height: #{$md}px;
+  }
+
+  &.large {
+    font-weight: #{$font-weight-bold};
+  }
+}
+
+@include respond-to(sm) {
+  .button {
+    &.small {
+      font-size: 0.7rem;
+      padding: $xs2 $xs3;
+    }
+
+    &.medium {
+      font-size: 0.9rem;
+      padding: $xs $sm;
+    }
+
+    &.large {
+      font-size: 1.1rem;
+      padding: $sm $md;
+    }
+  }
+}

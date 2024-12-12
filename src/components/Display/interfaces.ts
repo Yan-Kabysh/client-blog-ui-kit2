@@ -1,3 +1,4 @@
 export interface DisplayProps {
-    children: string
+  children: string;
+  className: string;
 }
